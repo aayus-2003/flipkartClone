@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myFlipkart.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- flipkart icon  -->
+    <link rel="icon" href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" type="image/png">
+    <!-- boostrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font cdn -->
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- navbar -->
+        <header class="header">
+            <div class="first-nav-side">
+
+                <div class="first-half">
+                    <img class="flip-logo" src="img /flipLogo.svg">
+                </div>
+                <div class="second-half">
+                    <button class="input-btn"><i class="fa-solid size fa-magnifying-glass"
+                            style="color: #adadcc;"></i></button>
+                    <input onsubmit="" type="text" class="input" placeholder="Search for Products, Brands and More">
+
+                </div>
+
+            </div>
+
+            <div class="second-nav-side">
+                <ul class="right-container">
+                    <li id="login"> <img class="footer_img_icon" src="icons/loginIcon.svg"> login <i class="fa-solid fa-chevron-down" id="login_logo"></i> </li>
+
+                    <!-- <div class="login-box">Login</div> -->
+
+                    <li> <img src="icons/cartIcon.svg"> Cart</li>
+                    <li> <img src="icons/sellerIcon.svg"> Become a Seller</li>
+                    <li>
+                       <div id="dots_container" class="dots-container">
+                            <div class="dots"></div>
+                            <div class="dots"></div>
+                            <div class="dots"></div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="first-glocery-container">
+                <div class="first-add"></div>
+                <div class="first-add">
+                    <div class="image_set">
+                        <img src="icons/tv.webp">
+                    </div>
+                    <div class="text">Appliance</div>
+                </div>
+                <div class="first-add">
+                    <div class="image_set">
+                        <img src="img /plane.webp">
+                    </div>
+                    <div class="text">Travel</div>
+                </div>
+                <div class="first-add">
+                    <div class="image_set">
+                        <img src="img /doll.webp">
+                    </div>
+                    <div class="text">Beauty, Toys & More</div>
+                </div>
+                <div class="first-add">
+                    <div class="image_set">
+                        <img src="img /bike.webp">
+                    </div>
+                    <div class="text">Electronics</div>
+                </div>
+                <div class="first-add">
+                    <div id="login_btn" class="login_btn none">
+                        <div class="inner_colom">
+                            <span class="customer">New customer ?</span>
+                            <span class="sign">Sign Up</span>
+                        </div>
+
+                        <div class="inner_colom_part_2">
+                            <div class="login_box top"> <i class="left fa-solid fa-user"></i> <span class="left">My
+                                    Profile</span></div>
+                            <div class="login_box"> <i class="left fa-solid fa-plus">
+                                </i> <span class="left">Flipkart
+                                    Plus Zone</span></div>
+                            <div class="login_box"> <i class="left fa-solid fa-truck-fast"></i> <span
+                                    class="left">Order</span></div>
+                            <div class="login_box"> <i class="left fa-regular fa-heart"></i> <span
+                                    class="left">Wishlist</span></div>
+                            <div class="login_box"> <i class="left fa-brands fa-shopify"></i> <span
+                                    class="left">Rewards</span></div>
+                            <div class="login_box"> <i class="left fa-solid fa-gift"></i> <span class="left">Gift
+                                    Cards</span></div>
+                        </div>
+                    </div>
+                    <div class="image_set">
+                        <img src="img /topOffer.webp">
+                    </div>
+                    <div class="text">Top Offer</div>
+                </div>
+                <div class="first-add">
+                    <div class="image_set">
+                        <img src="img /fashion.webp">
+                    </div>
+                    <div class="text">Fashion</div>
+                </div>
+                <div class="first-add">
+                    <div class="image_set">
+                        <img src="img /furni.webp">
+                    </div>
+                    <div class="text">Furniture</div>
+                </div>
+                <div class="first-add">
+                    <div class="image_set">
+                        <img src="img /grocery.webp">
+                    </div>
+                    <div class="text">Grocery</div>
+                    <div id="dots_open" class="dots_open  none">
+                        <div class="dots_open_yes"> <i class="leftt fa-regular fa-bell"></i> <span
+                                class="leftt">Notification Preferences</span> </div>
+                        <div class="dots_open_yes"> <i class="leftt fa-solid fa-headset"></i> <span class="leftt">24x7
+                                Customer Care</span></div>
+                        <div class="dots_open_yes"> <i class="leftt fa-solid fa-rectangle-ad"></i> <span
+                                class="leftt">Advertise</span></div>
+                        <div class="dots_open_yes"> <i class="leftt fa-solid fa-download"></i> <span
+                                class="left">Download App</span></div>
+                    </div>
+                </div>
+                <div class="first-add"></div>
+            </div>
+            <div class="slider-container">
+
+
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img /phoneAdd.webp" class="d-block rounded-3 w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img /christmasAdd.webp" class="d-block w-100 rounded-3" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img /planeAddSlider.webp" class="d-block w-100 rounded-3" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- slider end -->
+            </div>
+            <!-- elctronics start -->
+            <div class="container-electronics">
+                <div class="product">
+                    <div class="electronics-text">Best Of Electronics</div>
+                    <div class="product-boxes">
+                        <div class="first_product height_product">
+                            <div class="img_box">
+                                <img src="img /printer.webp" class="img_width" alt="">
+                            </div>
+                            <div class="text_electronsics">
+                                <span class="span_text">printers</span>
+                                <h6> From &#x20B9;3,999</h6>
+                            </div>
+                        </div>
+                        <div class="second_produc height_product">
+                            <div class="img_box">
+                                <img src="img /pendrive.webp" class="img_width" alt="">
+                            </div>
+                            <div class="text_electronsics">
+                                <span class="span_text">SandDisk sDDDC3</span>
+                                <h6> From &#x20B9;1,109</h6>
+                            </div>
+                        </div>
+                        <div class="third_product height_product">
+                            <div class="img_box">
+                                <img src="img /keyboard.webp" class="img_width" alt="">
+                            </div>
+                            <div class="text_electronsics">
+                                <span class="span_text">Wireless Mouse And Keyboard</span>
+                                <h6> From &#x20B9;3,999</h6>
+                            </div>
+                        </div>
+                        <div class="fourth_product height_product">
+                            <div class="img_box">
+                                <img src="img /moniter.webp" class="img_width" alt="">
+                            </div>
+                            <div class="text_electronsics">
+                                <span class="span_text">Moniter </span>
+                                <h6> From &#x20B9;6,599</h6>
+                            </div>
+                        </div>
+                        <div class="five_product height_product">
+                            <div class="img_box">
+                                <img src="img /camera.webp" class="img_width" alt="">
+                            </div>
+                            <div class="text_electronsics">
+                                <span class="span_text">Top Mirroless Cameras</span>
+                                <h6> From &#x20B9;79,000</h6>
+                            </div>
+                        </div>
+                        <div class="six_product height_product">
+                            <div class="img_box">
+                                <img src="img /powerbank.webp" class="img_width" alt="">
+                            </div>
+                            <div class="text_electronsics">
+                                <span class="span_text">Power Bank</span>
+                                <h6> From &#x20B9;1,099</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advertise">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- strat add -->
+
+
+
+    <!-- end -->
+
+    <!-- middle container -->
+    <div class="middle_container first_bottom">
+        <!-- advertice-first -->
+        <div class="add_of_middle">
+            <div class="adddd_first"></div>
+            <div class="adddd_second"></div>
+            <div class="adddd_third"></div>
+        </div>
+        <!-- advertice-end -->
+
+        <div class="container-electronics height margin-bottom">
+            <div class="product pBox">
+                <div class="electronics-text">Beauty, Food, Toys & More</div>
+                <div class="product-boxes">
+                    <div class="first_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /cycle.webp" class="img_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">HRX XTRM MTB 500 85%</span>
+                            <h6> From &#x20B9;199</h6>
+                        </div>
+                    </div>
+                    <div class="second_produc height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /coffee.webp" class="img_width extra_image_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Neuherbs Green Coffee Beans</span>
+                            <h6> From &#x20B9;1,109</h6>
+                        </div>
+                    </div>
+                    <div class="third_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /teddy.webp" class="img_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">feet Big size soft Teddy Bear</span>
+                            <h6> From &#x20B9;1,161</h6>
+                        </div>
+                    </div>
+                    <div class="fourth_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /badam (1).webp" class="img_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Happilo Californian Almonds</span>
+                            <h6> From &#x20B9;205</h6>
+                        </div>
+                    </div>
+                    <div class="five_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /piano.webp" class="img_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">CASIO LK-S250 KL11A </span>
+                            <h6> From &#x20B9;11,836</h6>
+                        </div>
+                    </div>
+                    <div class="six_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /trandmil.webp" class="img_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Auto Inclination Treadmill with  </span>
+                            <h6> From &#x20B9;71,999</h6>
+                        </div>
+                    </div>
+                    <div class="six_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /guitar.webp" class="img_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Acoustic Guitar Linden Wood</span>
+                            <h6> From &#x20B9;1,999</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second -->
+
+
+    <!-- third one -->
+    <div class="third_container">
+
+        <!-- second_add -->
+        <div class="add_of_middle bottom">
+            <div class="adddd_first one_image"></div>
+            <div class="adddd_second two_image"></div>
+            <div class="adddd_third three_image"></div>
+        </div>
+
+        <!-- second_add-end -->
+
+
+        <div class="container-electronics height">
+            <div class="product pBox2 bottom sports_section media_none">
+                <div class="electronics-text">Sports, Healthcare & more</div>
+                <div class="product-boxes">
+                    <div class="first_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /mb-fit.webp" class="img_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">MUSCLEBLAZE High Protein Muesli</span>
+                            <h6> From &#x20B9;699</h6>
+                        </div>
+                    </div>
+                    <div class="second_produc height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /handgrip.webp" class="img_width extra_image_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Battlestar Adjustable Hand Grip</span>
+                            <h6> From &#x20B9;149</h6>
+                        </div>
+                    </div>
+                    <div class="third_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /oats.webp" class="img_width extra_image_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Saffola Masala Oats</span>
+                            <h6> From &#x20B9;167</h6>
+                        </div>
+                    </div>
+                    <div class="fourth_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /leg.webp" class="img_width extra_image_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Leosportz 2 Pack Brace</span>
+                            <h6> From &#x20B9;269</h6>
+                        </div>
+                    </div>
+                    <div class="five_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /book.webp" class="img_width extra_image_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Biology Simplified Ncert Class XII </span>
+                            <h6> From &#x20B9;150</h6>
+                        </div>
+                    </div>
+                    <div class="six_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /bottle.webp" class="img_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">PROWL by TIGER SHROFF Boost</span>
+                            <h6> From &#x20B9;159</h6>
+                        </div>
+                    </div>
+                    <div class="six_product height_product middle_Height">
+                        <div class="img_box">
+                            <img src="img /penutButter.webp" class="img_width extra_image_width" alt="">
+                        </div>
+                        <div class="text_electronsics">
+                            <span class="span_text">Saffola Peanut Butter</span>
+                            <h6> From &#x20B9;190</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="add_of_middle_new">
+            <div class="adddd_first o-image"></div>
+            <div class="adddd_second t-image"></div>
+            <div class="adddd_third th-image"></div>
+        </div>
+        <!-- third one end -->
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="down_text">
+        <div class="inner_down_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima deserunt, sint tempora est praesentium iste
+            ratione doloremque, at nobis ducimus fugit modi, impedit exercitationem dolorum blanditiis ut. Odio
+            praesentium quia vitae, quisquam recusandae quaerat facilis iusto, dignissimos, deserunt at amet nulla quam
+            magni possimus impedit ut totam inventore non voluptatibus quasi! Iure repellendus culpa labore natus
+            assumenda? Maxime optio at delectus. Incidunt temporibus, ullam illo repellendus quam praesentium eveniet
+            blanditiis harum reiciendis, impedit, eaque pariatur! Nostrum animi hic ratione facere incidunt consequuntur
+            blanditiis nam, facilis quas ullam rerum natus praesentium rem voluptate voluptatum, iusto ab
+            exercitationem, eligendi iure. Doloribus at officia voluptate commodi blanditiis. Porro numquam cumque ipsum
+            accusantium, ipsa enim rerum accusamus minima aspernatur est asperiores sint minus harum fugiat praesentium
+            dolor architecto ad id possimus impedit necessitatibus nihil quia. Et distinctio saepe a perferendis
+            excepturi debitis culpa in. Perferendis odit itaque, perspiciatis vitae sed soluta voluptatibus architecto
+            rerum amet laudantium eum eos, voluptate, quam placeat est id. Commodi ad enim temporibus debitis possimus
+            fugiat. Neque, tenetur aliquam harum inventore quaerat provident! Expedita deleniti, nihil repellendus sunt
+            dignissimos debitis molestiae a quod eum in provident aperiam, distinctio iusto quam neque explicabo odit
+            accusamus aut eaque hic, voluptatibus sit fugiat minus at? Fugit, libero molestiae ad natus ea perferendis
+            cum, maiores magni enim nostrum ullam recusandae officia necessitatibus aperiam, maxime nesciunt ut
+            provident sint voluptate incidunt. Corrupti ducimus exercitationem vero neque atque soluta, nobis,
+            dignissimos et possimus mollitia sapiente quo architecto delectus nesciunt consequuntur eaque repudiandae
+            culpa quam eius impedit, deleniti asperiores voluptas laudantium! Quo suscipit culpa consectetur error
+            dolorem illum dicta ex magnam earum, cum excepturi laborum quos optio nesciunt sapiente vel aliquam quidem
+            facilis, labore iusto nam dolorum? Dicta quasi odio, explicabo quo dolorem odit neque quae fugit quisquam
+            reprehenderit quis accusamus, laudantium veritatis aperiam voluptatibus corrupti, non cum minus? Dolore
+            incidunt obcaecati harum fugiat! Repellendus ex corrupti voluptatem! Dolores tempore nam corrupti libero
+            aliquid quos repellendus laudantium voluptates mollitia dignissimos veritatis quo, molestias iste incidunt
+            explicabo. Nulla, in? Facilis nulla assumenda fugiat repudiandae asperiores numquam molestiae fugit
+            excepturi deleniti similique doloremque earum sapiente porro illum dignissimos odit consequuntur non, ipsa
+            sequi? Quasi impedit debitis nesciunt facere inventore in culpa fuga voluptatem esse ut porro consequatur
+            aliquid sapiente enim aut dolore, non dolorum libero assumenda blanditiis. Blanditiis, nostrum assumenda
+            modi odit ipsa, illum maiores rem vel explicabo placeat consequuntur, quas deserunt nesciunt possimus eos
+            dicta? Vero quidem voluptatibus possimus sint facilis necessitatibus perspiciatis sunt, suscipit itaque
+            ratione cumque facere tempore. Magnam neque dolores, sapiente optio quos, sunt quo quae expedita voluptate
+            iste placeat doloremque molestias soluta exercitationem maxime ducimus repellendus error non? Et,
+            consequatur iusto nobis delectus perferendis nulla exercitationem expedita facere repellendus, eveniet
+            voluptates excepturi ullam id asperiores assumenda a sint aspernatur doloribus voluptas, ducimus fugit
+            officia. Fuga, modi? Dignissimos amet eius praesentium quia nobis obcaecati, possimus repudiandae iure, modi
+            sunt optio commodi? Commodi, ipsum id mollitia molestiae natus fuga reprehenderit maiores repellendus
+            voluptatem, suscipit voluptatum illum veniam sunt voluptates! Vitae quod optio praesentium sapiente qui
+            animi dolor numquam, aspernatur obcaecati vel quos consequuntur nihil voluptas hic ad voluptatem earum alias
+            minima veritatis adipisci accusantium maxime. Quibusdam corrupti quam magni mollitia temporibus ipsa tenetur
+            nisi quod facilis quaerat? Error officia nostrum nulla non quos, ex consectetur impedit enim quis. Mollitia
+            atque dolor dignissimos? Similique nemo ad mollitia? Vitae quam tempora doloremque quod quasi illo earum
+            sed, eaque fugiat, enim facere ratione sapiente nostrum totam velit eveniet quisquam deleniti perferendis
+            voluptatibus consectetur labore corrupti voluptates! Harum doloremque facere cum est reiciendis velit,
+            veritatis dicta corrupti, vero pariatur assumenda asperiores exercitationem perferendis eaque porro!
+            Asperiores optio illum rerum est eos quae facilis possimus voluptatem minima! Molestias, vero. Ullam qui
+            magni optio minima possimus minus alias excepturi, modi, aliquam molestiae tempora. Ad sed aut quasi
+            blanditiis voluptate nihil porro, molestiae recusandae quas maxime eveniet ab, laboriosam commodi natus,
+            dolorum doloremque. Obcaecati alias maxime, quia incidunt quam eveniet, corporis libero provident rerum illo
+            laborum accusamus repellendus architecto atque, nostrum pariatur in hic! Vitae iste quo natus dolorum
+            facilis eos, repudiandae et, harum atque voluptatem consequatur eaque. Dicta fugiat iure animi assumenda
+            necessitatibus blanditiis velit. Fugit minima pariatur cum ex sit odio eligendi cupiditate incidunt laborum
+            maxime soluta atque eius quia laudantium debitis corporis officia, repellat nostrum nulla veritatis
+            quisquam? Nemo inventore laboriosam perferendis excepturi laborum quisquam quibusdam autem sunt pariatur eos
+            dolor saepe neque maiores cum, quas, voluptatem illum nobis? Amet iste error quibusdam quod aliquam aut!
+            Voluptatum repellendus quasi natus ratione, reiciendis earum fugit recusandae beatae impedit ducimus illum
+            facere dolorem cum alias libero. Est necessitatibus omnis quaerat eaque doloribus autem tenetur eum
+            architecto distinctio atque, reiciendis, ad facere dolorum sint consequatur, dolor minima iure deleniti ab
+            mollitia? Natus dolore illo animi reprehenderit. Consequatur, quae vel reprehenderit distinctio aspernatur
+            dolor quisquam quam minima corrupti eius sunt recusandae doloremque eaque ab veritatis. Quidem minima natus
+            suscipit, voluptatum incidunt illum nesciunt ullam nisi ratione corporis hic mollitia quo rem enim
+            repudiandae optio, qui nam labore excepturi unde ipsam pariatur. Qui ex eos, deleniti vel, voluptatem
+            molestiae veritatis modi magni maxime beatae sunt eius dolorem quibusdam neque blanditiis ad ullam nulla
+            esse ipsam. Veritatis, nihil ratione fugit rem minus id ea aliquid quod, modi quidem aspernatur sequi
+            reprehenderit! Doloribus corrupti minima consectetur ut error, eum quibusdam, voluptatibus quod adipisci
+            accusantium vel soluta perferendis dignissimos deserunt quia reiciendis tenetur cum? Eius deleniti autem
+            aliquam, totam error saepe quidem voluptate consequuntur odio harum animi ex, soluta natus ullam? Esse
+            tenetur quis eveniet assumenda deleniti, corporis ullam mollitia similique recusandae molestias nulla, sit
+            et tempore temporibus repellendus animi nostrum unde totam quia odio! Illum sequi quia repudiandae ratione
+            nesciunt cumque est minima, dolor temporibus autem totam earum quibusdam ea maxime veritatis porro hic
+            officiis fugit odit cupiditate aperiam! Reiciendis dolore illum, aspernatur deleniti quaerat aliquid
+            cupiditate assumenda rerum unde nulla totam alias. Earum sint, consectetur saepe aperiam ab laborum impedit
+            in consequuntur perferendis inventore totam debitis architecto, corrupti autem veritatis veniam ea
+            exercitationem molestiae ipsa? Perspiciatis fugit quasi, libero porro, quibusdam hic minima adipisci
+            laboriosam obcaecati provident id blanditiis quos quod labore minus nisi nihil quae voluptas, quis placeat.
+            Quam, repellat perspiciatis rerum accusantium est cum distinctio. Voluptatibus porro error repudiandae aut
+            magnam ab harum molestias a labore perferendis quam incidunt alias enim deserunt, dolore, quia eligendi?
+            Excepturi sit illum quod soluta animi perspiciatis maiores iure tempora pariatur sunt, ex facere error, eos
+            nostrum iusto dolorum aperiam corporis necessitatibus vitae corrupti, eaque inventore. Quia iusto, minima
+            enim veritatis perspiciatis quod obcaecati corporis adipisci quae aliquid fuga fugiat, quidem facilis
+            consequatur ex ipsum accusantium perferendis id? Similique aperiam vel odio quas vitae cupiditate? Impedit,
+            iste aperiam? Atque, consequatur, alias illum vitae officia quod architecto adipisci minus facilis dolor
+            corporis accusamus! Repudiandae libero velit accusamus quos autem? Accusantium, enim. Quo, culpa praesentium
+            vitae aliquam magnam mollitia molestias est officia nam veniam fugit, fugiat in quis hic quam laboriosam ut
+            ex iure repellendus amet modi officiis, laudantium dolore perspiciatis. Velit dicta repudiandae quaerat at
+            veniam, animi autem amet aspernatur enim unde! Rem quaerat consequuntur corporis pariatur sunt ad ducimus
+            maxime dicta esse tenetur laudantium molestiae, soluta dolorem doloremque cum veritatis voluptatem
+            perferendis facere ipsa ratione voluptatum. Accusamus officia exercitationem, non facere, distinctio
+            expedita, dolores a aperiam perferendis temporibus voluptates!
+        </div>
+    </div>
+
+    <footer class="media_none">
+        <div class="first_footer_box">
+            <div class="first_footer_left">
+                <div class="text_footer_left">
+                    <div class="left_first">
+                        <span class="footer_span">ABOUT</span>
+                        <h6 class="white_text">Contact Us</h6>
+                        <h6 class="white_text">About Us</h6>
+                        <h6 class="white_text">Careers</h6>
+                        <h6 class="white_text">Flipkart Stories</h6>
+                        <h6 class="white_text">Press</h6>
+                        <h6 class="white_text">Flipkart Wholesale</h6>
+                        <h6 class="white_text">Cleartrip</h6>
+                    </div>
+                </div>
+                <div class="text_footer_left">
+                    <div class="left_first">
+                        <span class="footer_span">HELP</span>
+                        <h6 class="white_text">Payments</h6>
+                        <h6 class="white_text">Shipping</h6>
+                        <h6 class="white_text">Cancellation & Returns</h6>
+                        <h6 class="white_text">FAQ</h6>
+                        <h6 class="white_text">Report Infringement</h6>
+                    </div>
+                </div>
+                <div class="text_footer_left">
+                    <div class="left_first">
+                        <span class="footer_span">CONSUMER POLICY</span>
+                        <h6 class="white_text">Cancellation & Return</h6>
+                        <h6 class="white_text">Terms Of Use</h6>
+                        <h6 class="white_text">Security</h6>
+                        <h6 class="white_text">Privacy</h6>
+                        <h6 class="white_text">Sitemap</h6>
+                        <h6 class="white_text">Grevance Redressal</h6>
+                        <h6 class="white_text">EPR Compliance</h6>
+                    </div>
+                </div>
+                <div class="text_footer_left">
+                    <div class="left_first">
+                        <span class="footer_span">SOCIAL</span>
+                        <h6 class="white_text">Facebook</h6>
+                        <h6 class="white_text">Twitter</h6>
+                        <h6 class="white_text">YouTube</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line">
+
+            </div>
+
+            <div class="first_footer_right">
+                <div class="text_footer_right">
+                    <div class="right_first">
+                        <span class="footer_span">Mail Us:</span>
+                        <h6 class="para_text">
+                            Flipkart Internet Private Limited, <br>Building Alyssa, Begonia & <br> Clove Embassy Tech
+                            Village, <br>
+                            Bengaluru, 560103, <br> Karnataka, India
+                        </h6>
+                    </div>
+
+                </div>
+
+                <div class="text_footer_right">
+                    <div class="right_first">
+                        <span class="footer_span">Registerd Office Address:</span>
+                        <h6 class="para_text">
+                            Flipkart Internet Private Limited, <br>Building Alyssa, Begonia & <br> Clove Embassy Tech
+                            Village, <br>
+                            Bengaluru, 560103, <br> Karnataka, India <br>
+                            CIN : U51109KA2012PTC066107 <br>
+                            Telephone: <a href="">044-45614700</a>
+                        </h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+
+        <div class="line_for_footer"></div>
+
+        <div class="wrap">
+
+            <div class="second_footer_box_one">
+                <div class="second_footer_option"> 
+                    <img class="footer_img_icon" src="icons/become a seller.svg">
+                    Beacome Seller</div>
+                <div class="second_footer_option"> <img class="footer_img_icon" src="icons/advertiseIcon.svg"> Advertise</div>
+                <div class="second_footer_option"> <img class="footer_img_icon" src="icons/giftCard.svg" > Gift Card</div>
+                <div class="second_footer_option"> <img class="footer_img_icon" src="icons/helpCenter.svg"> Help Center</div>
+                <div class="second_footer_option"> &#169; 2007-2003 Flipkart.com</div>
+            </div>
+
+            <div class="last_of_footer">
+                <div class="image_ofCards"></div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+

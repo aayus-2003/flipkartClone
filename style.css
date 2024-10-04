@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Mukta:wght@400;700&display=swap');
+
+html{
+    width: 100vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    background-color: rgba(211, 211, 211, 0.445);
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(211, 211, 211, 0.445);
+}
+
+.header {
+    width: 100%;
+    height: 6.5%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-nav-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.first-half {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.flip-logo {
+    width: 80%
+}
+
+.second-half {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+input {
+    width: 88%;
+    height: 4.7vh;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 0 6px 6px 0;
+    background-color: rgba(19, 73, 73, 0.137);
+    padding-left: 15px;
+}
+
+.input-btn {
+    background-color: rgba(19, 73, 73, 0.137);
+    height: 4.7vh;
+    width: 2.3vw;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots-container {
+    width: 1vw;
+    height: 3.5vh;
+    margin-top: 15px;
+}
+
+.dots {
+    width: 4px;
+    height: 4px;
+    border-radius: 80%;
+    border: none;
+    background-color: black;
+    margin: 3px 0 0 0;
+}
+
+
+.second-nav-side {
+    width: 50%;
+    height: 80%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    font-size: 17px;
+    /* background: #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+
+.right-container {
+    width: 60%;
+    height: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+
+.main {
+    width: 100vw;
+    height: 85%;
+}
+
+.first-glocery-container {
+    height: 16%;
+    width: 82%;
+    background: white;
+    margin: auto;
+}
+
+.slider-container {
+    height: 36%;
+    width: 82%;
+    /* background: gray; */
+    margin: 10px auto;
+}
+
+/* .height{
+    height: 100% !important;
+} */
+
+.container-electronics {
+    height: 43.4%;
+    width: 82%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+}
+
+.first-glocery-container {
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.first-add {
+    width: 10%;
+    height: 100%;
+}
+
+.image_set {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    height: 25%;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.electronics-text {
+    width: 98.9%;
+    height: 15%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.login {
+    width: 16rem;
+    height: 3.5rem;
+    background: blue;
+    position: relative;
+    top: 2.5rem;
+    right: 5.2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.none {
+    display: block;
+}
+
+
+.product {
+    width: 83.5%;
+    height: 100%;
+    background-color: white;
+}
+
+
+.advertise {
+    width: 15%;
+    height: 100%;
+    background-image: url(icons/planeAdd.webp);
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* icons css */
+
+.size {
+    font-size: 1.1rem;
+}
+
+.product-boxes {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.height_product {
+    width: 16%;
+    height: 90%;
+    border: 1px solid rgba(139, 132, 132, 0.637);
+    margin: 0 3px;
+
+}
+
+.img_box {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.text_electronsics {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.img_width {
+    width: 65%;
+    transition: ease 0.2s;
+}
+
+
+.img_width:hover {
+    scale: 1.1;
+}
+
+
+
+/* middle container */
+
+.middle_container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(211, 211, 211, 0.445);
+    padding-top: 5px;
+}
+
+.pBox {
+    width: 100%;
+    position: relative;
+    top: 4.5rem;
+
+}
+
+.middle_Height {
+    width: 13%;
+    margin: 0 9px;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+.pBox2 {
+    width: 100%;
+
+}
+
+/* btn word */
+
+.login_btn {
+    width: 14vw;
+    height: 29vh;
+    position: relative;
+    bottom: 10px;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+
+}
+
+.inner_colom {
+    width: 100%;
+    height: 20%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-block-end: 1px solid rgba(128, 128, 128, 0.281);
+    writing-mode: horizontal-tb;
+    border-radius: 6px 6px 0 0;
+}
+
+
+.inner_colom_part_2 {
+    width: 100%;
+    height: 80%;
+    background: white;
+    border-radius: 0 0 6px 6px;
+}
+
+.sign {
+    color: blue;
+    font-weight: bold;
+}
+
+.customer {
+    font-weight: 540;
+    margin-right: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login_box {
+    width: 100%;
+    height: 16.6%;
+    font-size: 0.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.left {
+    margin-left: 15px;
+}
+
+.top {
+    padding-top: 3.5px;
+}
+
+.dots_open {
+    width: 9.5vw;
+    height: 16vh;
+    position: relative;
+    z-index: 1;
+    bottom: 9rem;
+    right: 9rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 14px;
+    /* display: none; */
+}
+
+.dots_open_yes {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.leftt {
+    margin-left: 0.6rem;
+}
+
+
+.third_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(211, 211, 211, 0.445);
+}
+
+.sports_section {
+    margin-top: 2rem;
+}
+
+.add_of_middle {
+    height: 30%;
+    width: 82%;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*advertice containers  */
+
+.adddd_first {
+    width: 33%;
+    height: 100%;
+
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/19bc292770c054a9.jpg?q=20);
+}
+
+.adddd_second {
+    width: 33%;
+    height: 100%;
+
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/091151b16baabe39.png?q=20);
+}
+
+.adddd_third {
+    width: 33%;
+    height: 100%;
+
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/eabf4635dc528037.jpg?q=20);
+}
+
+/* second */
+
+.one_image {
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/00bd6cf4e114899d.jpg?q=20);
+}
+
+.two_image {
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/788e38837eef4f21.jpg?q=20);
+}
+
+.three_image {
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/accc42b968e72aa5.jpg?q=20);
+}
+
+/* third */
+
+.o-image {
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/1548919db25118af.jpg?q=20);
+}
+
+.t-image {
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/7d71ea2aabc2441f.png?q=20);
+}
+
+.th-image {
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/520/280/image/6ff0eb5fa83ec159.png?q=20);
+}
+
+/* image end here */
+
+
+.add_of_middle_new {
+    height: 30%;
+    width: 82%;
+    margin: auto;
+    position: relative;
+    bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bottom {
+    position: relative;
+    bottom: 9rem;
+}
+
+.height {
+    height: 40%;
+}
+
+.down_text {
+    width: 100%;
+    height: 72vh;
+    color: gray;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_down_text {
+    width: 80%;
+    height: 95%;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/* btn logic  */
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.block2 {
+    display: block;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 32vh;
+    background-color: rgb(27, 22, 22);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.first_footer_box {
+    width: 100%;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+}
+
+.second_footer_box {
+    width: 100%;
+    /* background-color: greenyellow; */
+    height: 20%
+}
+
+.first_footer_left {
+    width: 60%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+
+.text_footer_left {
+    width: 25%;
+    height: 100%;
+    /* border : 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_footer_right {
+    /* background-color: rgb(16, 5, 80); */
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+
+.text_footer_right {
+    width: 50%;
+    height: 100%;
+    /* border : 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_span {
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.left_first {
+    width: 45%;
+    height: 80%;
+    /* background-color: antiquewhite; */
+
+}
+
+.white_text {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.right_first {
+    width: 70%;
+    height: 80%;
+    /* background-color: aqua; */
+}
+
+.para_text {
+    color: white;
+    font-size: 13px;
+}
+
+.line {
+    height: 80%;
+    width: 0.1px;
+    background-color: rgba(128, 128, 128, 0.63);
+    margin: auto 0;
+    border: none;
+    outline: none;
+}
+
+.line_for_footer {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.63);
+    position: relative;
+    z-index: 1;
+}
+
+.second_footer_box_one {
+    height: 100%;
+    width: 65%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.last_of_footer {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.second_footer_box_one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrap {
+    height: 6.5vh;
+    width: 100%;
+    display: flex;
+}
+
+.change {
+    font-size: 11px;
+    margin-right: 2px;
+    color: #fff700;
+}
+
+.image_ofCards {
+    width: 65%;
+    height: 30%;
+    background-repeat: no-repeat;
+    background-image: url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg);
+}
+
+.second_footer_option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_img_icon {
+    padding-right: 0.4rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .adddd_first {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .adddd_second {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .adddd_third {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .inner_down_text {
+        font-size: 9px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    .login_btn {
+        width: 17vw;
+        height: 31vh;
+    }
+
+    .dots_open {
+        width: 14.5vw;
+        height: 18vh;
+        bottom: 8rem;
+        right: 0rem;
+    }
+
+    .text_electronsics {
+        font-size: 10px;
+    }
+
+    .white_text {
+        font-size: 9px;
+    }
+
+    .carousel-inner {
+        top: 2.5rem;
+    }
+
+    .pBox {
+        position: relative;
+        top: 0.9rem;
+    }
+
+    .bottom {
+        position: relative;
+        bottom: 12rem;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        height: 25%;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .first-glocery-container {  
+        width: 98%;
+
+    }
+
+    .container-electronics {
+        width: 98%;
+    }
+
+    .add_of_middle{
+        width: 98%;
+    }
+
+    .add_of_middle_new{
+        width: 98%;
+    }
+    .slider-container{
+        width: 98%;
+        position: relative;
+        bottom: 2.5rem;
+    }
+
+    .add_of_middle_new {
+        position: relative;
+        bottom: 6.5rem;
+    }
+
+}
+
+@media screen and (max-width : 650px) {
+
+    html{
+        width: 50%;
+    }
+
+    .middle_container{
+        background-color: white;
+    }
+
+    .header{
+        display: block;
+        height: 13.5%;
+    }
+    .second-nav-side{
+        display: none;
+    }
+    .first-nav-side{
+        width: 100%;
+    } 
+    .main-container{
+        width: 98vw;
+    }
+    .first-nav-side{
+        display: block;
+
+    }
+    .first-half{
+        height: 40%;
+        width: 100%;
+        justify-content: start;
+        /* background-color: blue; */
+    }
+    .flip-logo{
+        width: 20%;
+    }
+    .second-half{
+        justify-content: center;
+        height: 60%;
+        width: 100%;
+    }
+    input{
+        width: 80%;
+    }
+
+    .input-btn{
+        width: 8%;
+    }
+    .first-add{
+        width: 25%;
+    }
+    .first-glocery-container{
+        overflow: scroll;
+        overscroll-behavior: auto; 
+    }
+    .slider-container{
+        height: 19%;
+    }
+    .text{
+        font-size: 9px;
+    }
+    .w-100{
+        width: 224%!important;
+    }
+
+    .container-electronics {
+        display: block;
+    }
+    .product{
+        width: 100%;
+        height: 300%;
+    }
+    .img_box {
+        height: 70%;
+    }
+    .text-electronics{
+        height: 40%;
+        font-size: 15px;
+    }
+    .advertise {
+        display: none;
+    }
+    .slider-container{
+        display: none;
+    }
+    
+    .product-boxes{
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .add_of_middle{
+        flex-wrap: wrap;
+    }
+    .adddd_first{
+        width: 100%;
+    }
+    .adddd_second{
+        width: 100%;
+    }
+    .adddd_third{
+        width: 100%;
+    }
+    .inner_down_text{
+        font-size: 3.5px;
+    }
+    .add_of_middle{
+        display: none;
+    }
+    .pBox {
+        position: relative;
+        top: 90rem;
+    }
+    .height_product {
+        width: 94%;
+        height: 38%;
+    }
+    .bottom {
+        position: relative;
+        top: 100rem;
+    }
+    .add_of_middle_new{
+        display: none;
+    }
+    .third_container{
+        background-color: white;
+    }
+    .img_width{
+        width: 60%;
+    }
+    .electronics-text{
+        height: 12%;
+    }
+    .extra_image_width{
+        width: 35%;
+    }
+    .media_none{
+        display: none;
+    }
+}
+
