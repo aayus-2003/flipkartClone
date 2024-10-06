@@ -1,0 +1,85 @@
+trigger.forEach((value) => {
+    value.addEventListener('click', (e) => {
+        if(e.target.innerHTML == 'printers'){
+            obj = {
+                name : 'printer',
+                price : '₹3,999',
+                img : 'img /printer.webp'
+            }
+        }
+        if(e.target.innerHTML == 'SandDisk sDDDC3'){
+            obj = {
+                name : 'SandDisk sDDDC3',
+                price : '₹1,109',
+                img : 'img /pendrive.webp'
+            }
+        }
+        if(e.target.innerHTML == 'Wireless Mouse And Keyboard'){
+            obj = {
+                name : 'Wireless Mouse And Keyboard',
+                price : '₹3,999',
+                img : 'iimg /keyboard.webp'
+            }
+        }
+        if(e.target.innerHTML == 'Moniter'){
+            obj = {
+                name : 'Moniter',
+                price : '₹ ₹6,599',
+                img : 'img /moniter.webp'
+            }
+        }
+
+        
+
+    })
+})
+
+
+
+
+ newproductContainer.innerHTML = `
+    
+    <div class="productFirstChild">
+      <div class="forty">
+          <div class="fortyimagecontainer">
+              <img src="${obj[key].img}" class="fortyimagecontainerimg">
+          </div>
+      </div>
+      <div class="sixty">
+          <div class="fifty">
+              <div class="productname">
+                  <span class="productnamesize">${obj[key].name}</span>
+              </div>
+              <div class="productprice">
+                  <span class="productpricedirection">${obj[key].price}</span>
+              </div>
+              <div class="info">
+                  <div class="top">
+<div class="pixeltop"> Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C <br></div>
+
+<div class="pixeltop">Bank Offer 10% off up to ₹1,250 on HDFC Bank Credit Card Transactions. Min Txn Value: ₹7,499T&C <br></div>
+
+<div class="pixeltop">Bank Offer 10% off up to ₹1,500 on HDFC Bank Credit Card EMI Transactions. Min Txn Value: ₹7,499T&C <br></div>
+
+<div class="pixeltop">Special PriceGet extra 24% off (price inclusive of cashback/coupon)T&C</div>
+
+<div class="pixeltop">Buy together get 3% OFFT&C</div>
+                  </div>
+
+              </div>
+          </div>
+          <div class="fifty productdescriptionflex">
+              <div class="ProductDescription">
+                  <div class="productdescriptionflexTag">
+                      <span class="productdescriptionflexTagspan">Product Description</span>
+                  </div>
+                  <div class="productdescriptionflexText">
+                      <div class="smalldescriptiontext">Engrossing Viewing Experience
+                          Featuring a 1920x1080p resolution and 16:9 HDR display, the BenQ MOBIUZ EX240N Gaming Monitor offers attractive visuals. Integrated with the BenQ HDRi technology and up to 2.5 W inbuilt speakers, this gaming monitor lets you explore new dimensions with a completely immersive, all-encompassing audio-visual experience.</div>
+                  </div>   
+              </div>
+          </div>
+      </div>
+  </div>
+
+`
