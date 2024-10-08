@@ -38,7 +38,7 @@ trigger.forEach((value) => {
 
         let obj = [{
             name : 'Moniter',
-            price : '₹ ₹6,599',
+            price : '₹6,599',
             img : 'img /moniter.webp'
         }]
         
@@ -66,7 +66,7 @@ trigger.forEach((value) => {
         else if(e.target.innerHTML == 'Moniter'){
             obj = [{
                 name : 'Moniter',
-                price : '₹ ₹6,599',
+                price : '₹6,599',
                 img : 'img /moniter.webp'
             }]
         }
