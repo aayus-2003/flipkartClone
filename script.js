@@ -6,7 +6,7 @@ let login_btn = document.getElementById('login_btn')
 login.addEventListener('click',(e)=>{
     login_logo.classList.toggle('fa-chevron-down')
     login_logo.classList.toggle('fa-chevron-up')
-    login_btn.classList.toggle('block') 
+    login_btn.classList.toggle('block')  
 })
 
 let threeDotsOpen = document.getElementById('dots_open')
@@ -91,9 +91,9 @@ trigger.forEach((value) => {
                 img : 'img /cycle.webp'
             }]
         }
-        else if(e.target.innerHTML == 'PNeuherbs Green Coffee Beans'){
+        else if(e.target.innerHTML == 'Neuherbs Green Coffee Beans'){
             obj = [{
-                name : 'PNeuherbs Green Coffee Beans',
+                name : 'Neuherbs Green Coffee Beans',
                 price : '₹1,090',
                 img : 'img /coffee.webp'
             }]
@@ -112,9 +112,9 @@ trigger.forEach((value) => {
                 img : 'img /badam (1).webp'
             }]
         }
-        else if(e.target.innerHTML == 'fCASIO LK-S250 KL11A'){
+        else if(e.target.innerHTML == 'CASIO LK-S250 KL11A'){
             obj = [{
-                name : 'fCASIO LK-S250 KL11A',
+                name : 'CASIO LK-S250 KL11A',
                 price : '₹11,800',
                 img : 'img /piano.webp'
             }]
